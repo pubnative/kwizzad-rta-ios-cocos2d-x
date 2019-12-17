@@ -139,7 +139,6 @@
 		521A8EA819F11F5000D177D7 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		52B47A461A53D09B004E4C60 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
 		54EA8AB927E1869410B8B5A8 /* Pods_RtaCocos_desktop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RtaCocos_desktop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		62C2C52D23A8E2F800F30207 /* KwizzadRTA.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KwizzadRTA.framework; sourceTree = "<group>"; };
 		62C2C53523A8EB8300F30207 /* KwizzadRTABridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KwizzadRTABridge.h; sourceTree = "<group>"; };
 		62C2C53723A8EBCE00F30207 /* KwizzadRTABridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KwizzadRTABridge.mm; sourceTree = "<group>"; };
 		62C2C53923A8EC7300F30207 /* KwizzadRTABridgeNativeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KwizzadRTABridgeNativeAPI.h; sourceTree = "<group>"; };
@@ -263,7 +262,6 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				62C2C52D23A8E2F800F30207 /* KwizzadRTA.framework */,
 				62C451F523A3DF85009FD37A /* GameController.framework */,
 				294D0D631D0D56D500F7F5D4 /* CoreText.framework */,
 				ED545A7D1B68A1FA00C3958E /* libiconv.dylib */,
