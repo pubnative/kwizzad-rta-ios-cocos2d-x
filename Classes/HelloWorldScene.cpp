@@ -27,6 +27,9 @@
 USING_NS_CC;
 USING_NS_UI;
 
+cocos2d::ui::Button* HelloWorld::showRTAButton = NULL;
+bool HelloWorld::isAdAvailable = false;
+
 Scene *HelloWorld::createScene() {
     return HelloWorld::create();
 }
@@ -87,7 +90,6 @@ bool HelloWorld::init() {
     this->addChild(loadRTAButton);
 
     //add show rta button
-    auto showRTAButton = Button::create("Button.png", "ButtonPressed.png", "ButtonPressed.png");
     showRTAButton = Button::create("Button.png", "ButtonPressed.png", "ButtonPressed.png");
     showRTAButton->setTitleText("Show RTA");
     showRTAButton->setTitleFontName("fonts/Marker Felt.ttf");
@@ -96,6 +98,7 @@ bool HelloWorld::init() {
     showRTAButton->setPosition(Vec2(origin.x + 3 * visibleSize.width / 4,
                                       origin.y + visibleSize.height - 2 * showRTAButton->getContentSize().height / 2));
     showRTAButton->addTouchEventListener( CC_CALLBACK_2(HelloWorld::showRtaClick, this) );
+    setShowRtaEnabled(isAdAvailable);
     this->addChild(showRTAButton);
     
     //add show debug button
@@ -162,5 +165,13 @@ void HelloWorld::menuCloseCallback(Ref *pSender) {
 
     //EventCustom customEndEvent("game_scene_close_event");
     //_eventDispatcher->dispatchEvent(&customEndEvent);
+}
+
+void HelloWorld::setShowRtaEnabled(bool enabled) {
+    isAdAvailable = enabled;
+    if (showRTAButton != NULL) {
+        HelloWorld::showRTAButton->setEnabled(enabled);
+        HelloWorld::showRTAButton->setBright(enabled);
+    }
 }
 

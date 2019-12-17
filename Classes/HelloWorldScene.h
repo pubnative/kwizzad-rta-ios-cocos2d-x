@@ -33,7 +33,10 @@ class HelloWorld : public cocos2d::Scene
 {
 public:
     static cocos2d::Scene* createScene();
-
+    static void setShowRtaEnabled(bool);
+    static cocos2d::ui::Button* showRTAButton;
+    static bool isAdAvailable;
+    
     virtual bool init();
     
     // a selector callback

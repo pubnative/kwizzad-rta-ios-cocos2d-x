@@ -6,7 +6,7 @@
 //
 
 #import <KwizzadRTA/KwizzadRTA-Swift.h>
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface KwizzadRTABridge : UIViewController<KwizzadRTADelegate>
 

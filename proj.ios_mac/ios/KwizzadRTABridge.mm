@@ -33,8 +33,12 @@
 #pragma mark -
 #pragma mark KwizzadRTA delegate
 
-
 - (void)onAdAvailableWithPlacementId:(NSString * _Nonnull)placementId {
+    auto scene = cocos2d::Director::getInstance()->getRunningScene();
+    if (typeid(*scene) == typeid(HelloWorld)) {
+        HelloWorld* gameScene = static_cast<HelloWorld*>(scene);
+        gameScene->setShowRtaEnabled(true);
+    }
 }
 
 - (void)onAdCanceledWithPlacementId:(NSString * _Nonnull)placementId params:(NSDictionary<NSString *,id> * _Nullable)params {
@@ -46,7 +50,11 @@
 }
 
 - (void)onAdFailedToLoadWithPlacementId:(NSString * _Nonnull)placementId {
-    
+    auto scene = cocos2d::Director::getInstance()->getRunningScene();
+    if (typeid(*scene) == typeid(HelloWorld)) {
+        HelloWorld* gameScene = static_cast<HelloWorld*>(scene);
+        gameScene->setShowRtaEnabled(false);
+    }
 }
 
 - (void)onAdFinishedWithPlacementId:(NSString * _Nonnull)placementId params:(NSDictionary<NSString *,id> * _Nullable)params {
