@@ -15,7 +15,6 @@ extern "C" {
 
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     
-        // Unity Ads required methods
         void initKwizzadRTA (const char *token);
         void loadwizzadRTA (const char *placement);
         void showKwizzadRTA ();
