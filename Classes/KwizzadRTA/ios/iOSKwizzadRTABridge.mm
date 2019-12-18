@@ -5,12 +5,12 @@
 //  Created by Fares Ben Hamouda on 17.12.19.
 //
 
-#import "KwizzadRTABridgeNativeAPI.h"
-#import "KwizzadRTABridge.h"
+#import "iOSKwizzadRTABridge.h"
+#import "iOSNativeFunctionBridge.h"
 #import "AppController.h"
 #import "HelloWorldScene.h"
 
-@implementation KwizzadRTABridge
+@implementation iOSKwizzadRTABridge
 + (UIViewController* ) viewController {
     
     UIApplication* app = [UIApplication sharedApplication];
@@ -70,29 +70,29 @@
 
 
 #pragma mark -
-#pragma mark KwizzadRTABridge Native API Implementation
+#pragma mark iOSKwizzadRTABridge Native API Implementation
 
-void initKwizzadRTA (const char *token) {
+void iOSinitKwizzadRTA (const char *token) {
     [KwizzadRTA setTestMode:YES];
     [KwizzadRTA configureWith:[NSString stringWithFormat:@"%s", token] completion:^(BOOL finished) {
         NSLog(@"SDK configuration status: %@", finished ? @"success" : @"fail" );
     }];
 }
 
-void loadwizzadRTA (const char *placement) {
-    KwizzadRTABridge* bridge = [[KwizzadRTABridge alloc]init];
-    [KwizzadRTABridge.kwizzad loadWithPlacement:[NSString stringWithFormat:@"%s", placement]  delegate: bridge];
+void iOSloadwizzadRTA (const char *placement) {
+    iOSKwizzadRTABridge* bridge = [[iOSKwizzadRTABridge alloc]init];
+    [iOSKwizzadRTABridge.kwizzad loadWithPlacement:[NSString stringWithFormat:@"%s", placement]  delegate: bridge];
 }
 
-void showKwizzadRTA (){
-    [KwizzadRTABridge.kwizzad showAdFrom: [KwizzadRTABridge viewController]];
+void iOSshowKwizzadRTA (){
+    [iOSKwizzadRTABridge.kwizzad showAdFrom: [iOSKwizzadRTABridge viewController]];
 }
 
-void showDebugScreen (){
-    [KwizzadRTA showDebugScreenFrom:[KwizzadRTABridge viewController] instances: [NSArray arrayWithObjects: KwizzadRTABridge.kwizzad, nil]];
+void iOSshowDebugScreen (){
+    [KwizzadRTA showDebugScreenFrom:[iOSKwizzadRTABridge viewController] instances: [NSArray arrayWithObjects: iOSKwizzadRTABridge.kwizzad, nil]];
 }
 
-void showConsentScreen (){
-    [KwizzadRTA showConsentScreenFrom:[KwizzadRTABridge viewController] completion:^(BOOL consentGiven) {
+void iOSshowConsentScreen (){
+    [KwizzadRTA showConsentScreenFrom:[iOSKwizzadRTABridge viewController] completion:^(BOOL consentGiven) {
     }];
 }

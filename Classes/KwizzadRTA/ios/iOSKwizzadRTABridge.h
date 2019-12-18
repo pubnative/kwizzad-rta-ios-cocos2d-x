@@ -8,7 +8,7 @@
 #import <KwizzadRTA/KwizzadRTA-Swift.h>
 #import <UIKit/UIKit.h>
 
-@interface KwizzadRTABridge : UIViewController<KwizzadRTADelegate>
+@interface iOSKwizzadRTABridge : UIViewController<KwizzadRTADelegate>
 
 + (UIViewController* ) viewController;
 + (KwizzadRTA*) kwizzad;

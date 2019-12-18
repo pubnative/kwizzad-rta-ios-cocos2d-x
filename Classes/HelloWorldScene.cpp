@@ -130,30 +130,30 @@ bool HelloWorld::init() {
 
 void HelloWorld::initRTA()
 {
-    initKwizzadRTA("rta_ios");
+    NativeFunctionBridge::initKwizzadRTA("rta_ios");
 }
 
 void HelloWorld::loadRtaClick(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventType eventType) {
     if (cocos2d::ui::Widget::TouchEventType::ENDED == eventType) {
-        loadwizzadRTA("test");
+        NativeFunctionBridge::loadwizzadRTA("test");
     }
 }
 
 void HelloWorld::showRtaClick(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventType eventType) {
     if (cocos2d::ui::Widget::TouchEventType::ENDED == eventType) {
-        showKwizzadRTA();
+        NativeFunctionBridge::showKwizzadRTA();
     }
 }
 
 void HelloWorld::showDebugClick(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventType eventType) {
     if (cocos2d::ui::Widget::TouchEventType::ENDED == eventType) {
-        showDebugScreen();
+        NativeFunctionBridge::showDebugScreen();
     }
 }
 
 void HelloWorld::showConsentClick(cocos2d::Ref* pSender, cocos2d::ui::Widget::TouchEventType eventType) {
     if (cocos2d::ui::Widget::TouchEventType::ENDED == eventType) {
-        showConsentScreen();
+        NativeFunctionBridge::showConsentScreen();
     }
 }
 

@@ -27,7 +27,7 @@
 
 #include "cocos2d.h"
 #include "ui/CocosGUI.h"
-#include "KwizzadRTABridgeNativeAPI.h"
+#include "NativeFunctionBridge.h"
 
 class HelloWorld : public cocos2d::Scene
 {
