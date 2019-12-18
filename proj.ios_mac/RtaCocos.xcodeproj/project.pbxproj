@@ -46,9 +46,9 @@
 		521A8EAA19F11F5000D177D7 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 521A8EA819F11F5000D177D7 /* fonts */; };
 		52B47A471A53D09C004E4C60 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B47A461A53D09B004E4C60 /* Security.framework */; };
 		62C2C53823A8EBCE00F30207 /* KwizzadRTABridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 62C2C53723A8EBCE00F30207 /* KwizzadRTABridge.mm */; };
-		62C2C53E23A8FB9A00F30207 /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C2C53C23A8FB9A00F30207 /* Button.png */; };
-		62C2C53F23A8FB9A00F30207 /* ButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C2C53D23A8FB9A00F30207 /* ButtonPressed.png */; };
 		62C451F623A3DF85009FD37A /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C451F523A3DF85009FD37A /* GameController.framework */; };
+		62C5092923AA373400ACD8AD /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C5092723AA373400ACD8AD /* Button.png */; };
+		62C5092A23AA373400ACD8AD /* ButtonPressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 62C5092823AA373400ACD8AD /* ButtonPressed.png */; };
 		A1442F45F7AD3007901E2E33 /* Pods_RtaCocos_mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E391BF4D853CA62C59770E /* Pods_RtaCocos_mobile.framework */; };
 		BF171245129291EC00B8313A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB012928DE900B8313A /* OpenGLES.framework */; };
 		BF1712471292920000B8313A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BF170DB412928DE900B8313A /* libz.dylib */; };
@@ -142,9 +142,9 @@
 		62C2C53523A8EB8300F30207 /* KwizzadRTABridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KwizzadRTABridge.h; sourceTree = "<group>"; };
 		62C2C53723A8EBCE00F30207 /* KwizzadRTABridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KwizzadRTABridge.mm; sourceTree = "<group>"; };
 		62C2C53923A8EC7300F30207 /* KwizzadRTABridgeNativeAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KwizzadRTABridgeNativeAPI.h; sourceTree = "<group>"; };
-		62C2C53C23A8FB9A00F30207 /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Button.png; path = "../../../Downloads/tvsmiles-rta-cocos2d-android-12e48bc73705/Resources/Button.png"; sourceTree = "<group>"; };
-		62C2C53D23A8FB9A00F30207 /* ButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ButtonPressed.png; path = "../../../Downloads/tvsmiles-rta-cocos2d-android-12e48bc73705/Resources/ButtonPressed.png"; sourceTree = "<group>"; };
 		62C451F523A3DF85009FD37A /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		62C5092723AA373400ACD8AD /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		62C5092823AA373400ACD8AD /* ButtonPressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonPressed.png; sourceTree = "<group>"; };
 		6AC97428AEDD24E5257FB20B /* Pods-RtaCocos-mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RtaCocos-mobile.release.xcconfig"; path = "Target Support Files/Pods-RtaCocos-mobile/Pods-RtaCocos-mobile.release.xcconfig"; sourceTree = "<group>"; };
 		6E5424698C181D385706D2EC /* Pods-RtaCocos-desktop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RtaCocos-desktop.debug.xcconfig"; path = "Target Support Files/Pods-RtaCocos-desktop/Pods-RtaCocos-desktop.debug.xcconfig"; sourceTree = "<group>"; };
 		A5E391BF4D853CA62C59770E /* Pods_RtaCocos_mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RtaCocos_mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -293,9 +293,9 @@
 			children = (
 				521A8EA819F11F5000D177D7 /* fonts */,
 				3EACC98E19EE6D4300EB3C5E /* res */,
+				62C5092723AA373400ACD8AD /* Button.png */,
+				62C5092823AA373400ACD8AD /* ButtonPressed.png */,
 				46880B7619C43A67006E1F66 /* CloseNormal.png */,
-				62C2C53C23A8FB9A00F30207 /* Button.png */,
-				62C2C53D23A8FB9A00F30207 /* ButtonPressed.png */,
 				46880B7719C43A67006E1F66 /* CloseSelected.png */,
 				46880B7A19C43A67006E1F66 /* HelloWorld.png */,
 			);
@@ -463,11 +463,11 @@
 				1A88B2641FC3D9C9005C14AE /* Images.xcassets in Resources */,
 				46880B7D19C43A67006E1F66 /* CloseSelected.png in Resources */,
 				521A8EA919F11F5000D177D7 /* fonts in Resources */,
-				62C2C53F23A8FB9A00F30207 /* ButtonPressed.png in Resources */,
 				3EACC98F19EE6D4300EB3C5E /* res in Resources */,
-				62C2C53E23A8FB9A00F30207 /* Button.png in Resources */,
+				62C5092923AA373400ACD8AD /* Button.png in Resources */,
 				1AF87B891F6F781D007BE51C /* LaunchScreenBackground.png in Resources */,
 				46880B7B19C43A67006E1F66 /* CloseNormal.png in Resources */,
+				62C5092A23AA373400ACD8AD /* ButtonPressed.png in Resources */,
 				1AF87B881F6F781D007BE51C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
