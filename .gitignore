@@ -4,6 +4,7 @@
 
 ## Build generated
 build/
+ios-build/
 DerivedData/
 *.zip
 KwizzadRTA*.framework
